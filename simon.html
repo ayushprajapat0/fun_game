@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <link rel="icon" type="image/png" href="./img/game-control.png">
+    <link rel="stylesheet" href="simon.css">
+</head>
+<body>
+<h1>Simon Says Game</h1>
+  <div class="main">
+    <h3 style="height: 20px;">Press any key to start</h3>
+    <div class="box-container">
+        <div class="line1">
+            <div class="box red" type="button" id="red"></div>
+            <div class="box yellow" type="button" id="yellow"></div>
+        </div>
+        <div class="line1">
+            <div class="box purple" type="button" id="purple"></div>
+            <div class="box green" type="button" id="green"></div>
+        </div>
+    </div>
+  </div>
+  <button onclick="history.back()" class="back">Go Back</button>
+    <script src="simon.js"></script>
+</body>
+</html>
