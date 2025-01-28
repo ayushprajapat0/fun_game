@@ -4,7 +4,8 @@ let buttons=["yellow","red","green","purple"];
 let started=false;
 let level=0;
 let h3=document.querySelector('h3');
-document.addEventListener("keypress",function(){
+let strt=document.querySelector('.strt');
+strt.addEventListener("click",function(){
     if(started==false){
         console.log("Game started");
         started=true;
@@ -42,7 +43,7 @@ function checkAns(idx){
            setTimeout(levelup,500);
         }
     }else{
-       h3.innerHTML=`Game over! Your Score was <b>${level}</b>. <br> Press any key To start Again.`
+       h3.innerHTML=`Game over! Your Score was <b>${level}</b>. <br> Press button To start Again.`
        document.querySelector(".main").style.backgroundColor="red";
        setTimeout(function(){
         document.querySelector(".main").style.backgroundColor="white";
